@@ -6,6 +6,9 @@ edition.workspace = true
 license.workspace = true
 repository.workspace = true
 rust-version.workspace = true
+readme = "../../README.md"
+keywords = ["post-quantum", "tls", "cryptography", "ml-kem", "migration"]
+categories = ["cryptography", "command-line-utilities"]
 
 [dependencies]
 hybridize-core.workspace = true
