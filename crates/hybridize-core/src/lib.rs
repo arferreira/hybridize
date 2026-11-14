@@ -1,14 +1,9 @@
-pub fn add(left: u64, right: u64) -> u64 {
-    left + right
-}
+//! Core finding module and policies
 
-#[cfg(test)]
-mod tests {
-    use super::*;
+mod finding;
+mod group;
+mod policy;
 
-    #[test]
-    fn it_works() {
-        let result = add(2, 2);
-        assert_eq!(result, 4);
-    }
-}
+pub use finding::{Confidence, Finding, Location, Resolved, RuntimeVersion, UnresolvedReason};
+pub use group::Group;
+pub use policy::Policy;
